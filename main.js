@@ -1,13 +1,10 @@
-var savegame = JSON.parse(localStorage.getItem("cavetospaceSave"))
-if (savegame !== null) {
-  gameData = savegame
-}
 
 var gameData = {
   wood: 0,
   woodPerClick: 1,
   woodPerClickCost: 10
 }
+
 
 
 function gatherWood() {
@@ -25,6 +22,9 @@ function buyWoodPerClick() {
   }
 }
 
-var saveGameLoop = window.setInterval(function() {
-  localStorage.setItem('cavetospaceSave', JSON.stringify(gameData))
-}, 15000)
+function tab(tab) {
+  document.getElementById("gatherWoodMenu").style.display = "none"
+  document.getElementById("shopMenu").style.display = "none"
+  document.getElementById(tab).style.display = "inline-block"
+}
+tab("gatherWoodMenu")
