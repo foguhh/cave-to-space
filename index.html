@@ -7,18 +7,21 @@
   </head>
 
   <body>
-    <p> <b><h1>Cave to Space</h1></b> </p>
+    <p> <b><h1 style="color:white;">Cave to Space</h1></b> </p>
 
-    <p id="woodGathered" class="wood-gathered">0 Wood Gathered</p>
-    <div id="navigateButtons">
-      <button onclick="tab('gatherWoodMenu')">Go to Gather Wood</button>
-      <button onclick="tab('shopMenu')">Go to Shop</button>
+    <div class="gathered-resources">
+      <p>0 Wood Gathered</p>
     </div>
-    <div id="gatherWoodMenu">
-      <button onclick="gatherWood()">Gather Wood</button>
+    <div id="navigateButtons">
+      <button class="navigateButtonsStyle" onclick="tab('gatheringMenu')">Gathering</button>
+      <button class="navigateButtonsStyle" onclick="tab('shopMenu')">Upgrades</button>
+    </div>
+    <br>
+    <div id="gatheringMenu">
+      <button class="gatherWoodButton" onclick="gatherWood()">Gather Wood</button>
     </div>
     <div id="shopMenu">
-      <button onclick="buyWoodPerClick()" id="perClickUpgrade">Upgrade Axe (Currently Level 1) Cost: 10 Gold</button>
+      <button onclick="buyWoodPerClick()" id="perClickUpgradeAxe">Upgrade Axe (Currently Level 1) Cost: 10 Gold</button>
     </div>
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
   </body>

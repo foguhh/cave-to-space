@@ -1,8 +1,40 @@
-.wood-gathered {
-  color: red;
+.gathered-resources {
+  color: brown;
 }
 
 body {
+  background-color: #1a1a1a;
   text-align: center;
   outline: none;
+}
+
+.navigateButtonsStyle{
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+  .navigateButtonsStyle:hover {
+    background-color: grey;
+    color: white;
+  }
+
+.gatherWoodButton {
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
