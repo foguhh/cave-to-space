@@ -1,11 +1,23 @@
-.gathered-resources {
-  color: brown;
+.woodGatheredStyle {
+  color: white;
+  font-weight: bold;
+  outline-style: solid;
+  outline-color: brown;
+}
+
+.stoneGatheredStyle {
+  visibility: hidden;
+  color: white;
+  font-weight: bold;
+  outline-style: solid;
+  outline-color: grey;
 }
 
 body {
   background-color: #1a1a1a;
   text-align: center;
   outline: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigateButtonsStyle{
@@ -17,6 +29,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -26,8 +39,22 @@ body {
     color: white;
   }
 
-.gatherWoodButton {
+.gatherWoodButtonStyle {
   background-color: brown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.stoneButtonStyle {
+  background-color: grey;
+  visibility: hidden;
   border: none;
   color: white;
   padding: 15px 32px;

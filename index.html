@@ -9,19 +9,28 @@
   <body>
     <p> <b><h1 style="color:white;">Cave to Space</h1></b> </p>
 
-    <div class="gathered-resources">
-      <p>0 Wood Gathered</p>
-    </div>
+  <p class="woodGatheredStyle" id="woodGathered">0 Wood Gathered | WPS: 0</p>
+  <p class="stoneGatheredStyle" id="stoneGathered">0 Stone Gathered | SPS: 0</p>
+
     <div id="navigateButtons">
       <button class="navigateButtonsStyle" onclick="tab('gatheringMenu')">Gathering</button>
-      <button class="navigateButtonsStyle" onclick="tab('shopMenu')">Upgrades</button>
+      <button class="navigateButtonsStyle" onclick="tab('workersMenu')">Workers</button>
+      <button class="navigateButtonsStyle" onclick="tab('upgradesMenu')">Upgrades</button>
     </div>
     <br>
     <div id="gatheringMenu">
-      <button class="gatherWoodButton" onclick="gatherWood()">Gather Wood</button>
+      <button class="gatherWoodButtonStyle" id="gatherWoodButton" onclick="gatherWood(gameData.woodPerClick)">Gather Wood</button>
+      <button class="stoneButtonStyle" id="gatherStoneButton" onclick="gatherStone(gameData.stonePerClick)">Gather Stone<br>(Pickaxe Required)</button>
     </div>
-    <div id="shopMenu">
-      <button onclick="buyWoodPerClick()" id="perClickUpgradeAxe">Upgrade Axe (Currently Level 1) Cost: 10 Gold</button>
+
+    <div id="workersMenu">
+      <button class="gatherWoodButtonStyle" id="woodWorkersBuy" onclick="buyWoodWorker()">Train Lumberman<br>Owned: 0 | Cost: 100 | WPS: 0</button>
+      <button class="stoneButtonStyle" id="stoneWorkersBuy" onclick="buyStoneWorker()">Train Stone Miner<br>Owned: 0<br>Faço esta merda amanhã : D</button>
+    </div>
+
+    <div id="upgradesMenu">
+      <button class="gatherWoodButtonStyle" onclick="buyWoodPerClick()" id="perClickUpgradeAxe">Upgrade Axe<br>Level: 1 | Cost: 10 Wood | WPC: 1</button>
+      <button class="stoneButtonStyle" onclick="buyStonePerClick()" id="perClickUpgradePickaxe">Buy Starter Pickaxe<br> Price: 1000 Wood</button>
     </div>
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
   </body>
